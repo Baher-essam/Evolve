@@ -8,12 +8,20 @@
         <meta name="keyword" content="Fitness , gym , sports , muslses">
         <title>Evolove</title>
 
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <!--loading start icon-->
+<section id="loading"></section>
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+<div id="progress"></div>
+        
         <!--start of navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-trajsparent fixed-top text-white py-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top text-white py-2">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <div class="logo">
@@ -134,21 +142,19 @@
             <div class="hedaerLayer d-flex align-items-center justify-content-center">
                 <div class="headerData text-center text-white">
                     <h1>Powerful Workout</h1>
-                    <p>Learn the secrets of gym success.</p>
+                    <p class="my-3">Learn the secrets of gym success.</p>
                     <a href="#" class="text-uppercase btn">get started</a>
                 </div>
             </div>
         </header>
 
-        <div id="about" class="">
+        <div id="about" class="about">
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center no-gutters">
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="aboutData">
-                                <h1>test</h1>
-                                <h1>test</h1>
-                                <h1>test</h1>
-                                
+                        <div class="aboutData p-5">
+                            <h4>Welcome to the <span>best fitness</span> club in London. A space where the talent meets the skills.</h4>
+                            <div class="watchVideo text-uppercase">watch the video</div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -161,16 +167,143 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="aboutData"></div>
+                        <div class="aboutData p-5">
+                            <h5 class="text-uppercase mb-4">reach your goal</h5>
+                            <ul class="list-untsyled">
+                                <li>
+                                    <svg version="1.1" id="Capa_1" class="mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="18" height="18" viewBox="0 0 305.002 305.002" style="enable-background:new 0 0 305.002 305.002;"
+                                    xml:space="preserve" fill="#00000060">
+                                        <g>
+                                            <g>
+                                                <path d="M152.502,0.001C68.412,0.001,0,68.412,0,152.501s68.412,152.5,152.502,152.5c84.089,0,152.5-68.411,152.5-152.5
+                                                    S236.591,0.001,152.502,0.001z M152.502,280.001C82.197,280.001,25,222.806,25,152.501c0-70.304,57.197-127.5,127.502-127.5
+                                                    c70.304,0,127.5,57.196,127.5,127.5C280.002,222.806,222.806,280.001,152.502,280.001z"/>
+                                                <path d="M218.473,93.97l-90.546,90.547l-41.398-41.398c-4.882-4.881-12.796-4.881-17.678,0c-4.881,4.882-4.881,12.796,0,17.678
+                                                    l50.237,50.237c2.441,2.44,5.64,3.661,8.839,3.661c3.199,0,6.398-1.221,8.839-3.661l99.385-99.385
+                                                    c4.881-4.882,4.881-12.796,0-17.678C231.269,89.089,223.354,89.089,218.473,93.97z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <p class="mb-0">Yoga</p>
+                                </li>
+                                <li>
+                                    <svg version="1.1" id="Capa_1" class="mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="18" height="18" viewBox="0 0 305.002 305.002" style="enable-background:new 0 0 305.002 305.002;"
+                                    xml:space="preserve" fill="#00000060">
+                                        <g>
+                                            <g>
+                                                <path d="M152.502,0.001C68.412,0.001,0,68.412,0,152.501s68.412,152.5,152.502,152.5c84.089,0,152.5-68.411,152.5-152.5
+                                                    S236.591,0.001,152.502,0.001z M152.502,280.001C82.197,280.001,25,222.806,25,152.501c0-70.304,57.197-127.5,127.502-127.5
+                                                    c70.304,0,127.5,57.196,127.5,127.5C280.002,222.806,222.806,280.001,152.502,280.001z"/>
+                                                <path d="M218.473,93.97l-90.546,90.547l-41.398-41.398c-4.882-4.881-12.796-4.881-17.678,0c-4.881,4.882-4.881,12.796,0,17.678
+                                                    l50.237,50.237c2.441,2.44,5.64,3.661,8.839,3.661c3.199,0,6.398-1.221,8.839-3.661l99.385-99.385
+                                                    c4.881-4.882,4.881-12.796,0-17.678C231.269,89.089,223.354,89.089,218.473,93.97z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <p class="mb-0">Cardio</p>
+                                </li>
+                                <li>
+                                    <svg version="1.1" id="Capa_1" class="mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="18" height="18" viewBox="0 0 305.002 305.002" style="enable-background:new 0 0 305.002 305.002;"
+                                    xml:space="preserve" fill="#00000060">
+                                        <g>
+                                            <g>
+                                                <path d="M152.502,0.001C68.412,0.001,0,68.412,0,152.501s68.412,152.5,152.502,152.5c84.089,0,152.5-68.411,152.5-152.5
+                                                    S236.591,0.001,152.502,0.001z M152.502,280.001C82.197,280.001,25,222.806,25,152.501c0-70.304,57.197-127.5,127.502-127.5
+                                                    c70.304,0,127.5,57.196,127.5,127.5C280.002,222.806,222.806,280.001,152.502,280.001z"/>
+                                                <path d="M218.473,93.97l-90.546,90.547l-41.398-41.398c-4.882-4.881-12.796-4.881-17.678,0c-4.881,4.882-4.881,12.796,0,17.678
+                                                    l50.237,50.237c2.441,2.44,5.64,3.661,8.839,3.661c3.199,0,6.398-1.221,8.839-3.661l99.385-99.385
+                                                    c4.881-4.882,4.881-12.796,0-17.678C231.269,89.089,223.354,89.089,218.473,93.97z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <p class="mb-0">Crossfit</p>
+                                </li>
+                                <li>
+                                    <svg version="1.1" id="Capa_1" class="mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="18" height="18" viewBox="0 0 305.002 305.002" style="enable-background:new 0 0 305.002 305.002;"
+                                    xml:space="preserve" fill="#00000060">
+                                        <g>
+                                            <g>
+                                                <path d="M152.502,0.001C68.412,0.001,0,68.412,0,152.501s68.412,152.5,152.502,152.5c84.089,0,152.5-68.411,152.5-152.5
+                                                    S236.591,0.001,152.502,0.001z M152.502,280.001C82.197,280.001,25,222.806,25,152.501c0-70.304,57.197-127.5,127.502-127.5
+                                                    c70.304,0,127.5,57.196,127.5,127.5C280.002,222.806,222.806,280.001,152.502,280.001z"/>
+                                                <path d="M218.473,93.97l-90.546,90.547l-41.398-41.398c-4.882-4.881-12.796-4.881-17.678,0c-4.881,4.882-4.881,12.796,0,17.678
+                                                    l50.237,50.237c2.441,2.44,5.64,3.661,8.839,3.661c3.199,0,6.398-1.221,8.839-3.661l99.385-99.385
+                                                    c4.881-4.882,4.881-12.796,0-17.678C231.269,89.089,223.354,89.089,218.473,93.97z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <p class="mb-0">Functional Training</p>
+                                </li>
+                                <li>
+                                    <svg version="1.1" id="Capa_1" class="mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="18" height="18" viewBox="0 0 305.002 305.002" style="enable-background:new 0 0 305.002 305.002;"
+                                    xml:space="preserve" fill="#00000060">
+                                        <g>
+                                            <g>
+                                                <path d="M152.502,0.001C68.412,0.001,0,68.412,0,152.501s68.412,152.5,152.502,152.5c84.089,0,152.5-68.411,152.5-152.5
+                                                    S236.591,0.001,152.502,0.001z M152.502,280.001C82.197,280.001,25,222.806,25,152.501c0-70.304,57.197-127.5,127.502-127.5
+                                                    c70.304,0,127.5,57.196,127.5,127.5C280.002,222.806,222.806,280.001,152.502,280.001z"/>
+                                                <path d="M218.473,93.97l-90.546,90.547l-41.398-41.398c-4.882-4.881-12.796-4.881-17.678,0c-4.881,4.882-4.881,12.796,0,17.678
+                                                    l50.237,50.237c2.441,2.44,5.64,3.661,8.839,3.661c3.199,0,6.398-1.221,8.839-3.661l99.385-99.385
+                                                    c4.881-4.882,4.881-12.796,0-17.678C231.269,89.089,223.354,89.089,218.473,93.97z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <p class="mb-0">Crunch</p>
+                                </li>
+                        
+                        
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="aboutData"></div>
+                        <div class="aboutData">
+                            <picture>
+                                <source src="images/fitness-2.webp" type="image/webp">
+                                <source src="images/fitness-2.jpg" type="image/jpg">
+                                <img src="images/fitness-2.jpg" class="img-fluid" alt="fitness 1">
+                            </picture>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="aboutData"></div>
+                        <div class="aboutData  px-5 py-3">
+                            <svg version="1.1" id="Capa_1" class="mb-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M330.667,122.667c23.467,0,42.667-19.2,42.667-42.667s-19.2-42.667-42.667-42.667S288,56.533,288,80
+                                                S307.2,122.667,330.667,122.667z"/>
+                                            <path d="M106.667,261.333C48,261.333,0,309.333,0,368s48,106.667,106.667,106.667c58.667,0,106.667-48,106.667-106.667
+                                                S165.333,261.333,106.667,261.333z M106.667,442.667C65.067,442.667,32,409.6,32,368s33.067-74.667,74.667-74.667
+                                                c41.6,0,74.667,33.067,74.667,74.667S148.267,442.667,106.667,442.667z"/>
+                                            <path d="M404.267,238.933v-42.667c-32,0-58.667-11.733-77.867-30.933L284.8,124.8c-6.4-7.467-17.067-12.8-28.8-12.8
+                                                s-22.4,4.267-29.867,12.8l-58.667,58.667c-7.467,7.467-12.8,18.133-12.8,29.867s5.333,22.4,12.8,30.933l67.2,59.733v106.667
+                                                h42.667V277.333L230.4,230.4l50.133-51.2l16,16C323.2,222.933,360.533,238.933,404.267,238.933z"/>
+                                            <path d="M405.333,261.333c-58.667,0-106.667,48-106.667,106.667s48,106.667,106.667,106.667C464,474.667,512,426.667,512,368
+                                                S464,261.333,405.333,261.333z M405.333,442.667c-41.6,0-74.667-33.067-74.667-74.667s33.067-74.667,74.667-74.667
+                                                C446.933,293.333,480,326.4,480,368S446.933,442.667,405.333,442.667z"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <h3 class="text-capitalize">our <span>Story</span></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, similique enim labore quos atque? Quaerat officiis itaque quia ipsam eveniet sunt dolorem, similique, rem totam quod deleniti suscipit, debitis, impedit.</p>
+                            <a href="#" class="text-uppercase">make an  appointment</a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="aboutData"></div>
+                        <div class="aboutData">
+                            <picture>
+                                <source src="images/fitness-3.webp" type="image/webp">
+                                <source src="images/fitness-3.jpg" type="image/jpg">
+                                <img src="images/fitness-3.jpg" class="img-fluid" alt="fitness 1">
+                            </picture>
+                        </div>
                     </div>
                 </div>
             </div>

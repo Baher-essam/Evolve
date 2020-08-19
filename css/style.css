@@ -20,9 +20,63 @@ a , .navbar-light .navbar-nav .active>.nav-link , .btn
     -ms-border-radius: 0;
     -o-border-radius: 0;
 }
-a:hover
+.dark-bg { background-color: #1f1f1f;}
+a:hover {text-decoration: none;}
+
+/*progress height bar*/
+::-webkit-scrollbar {width: 0;}
+#scrollPath
 {
-    text-decoration: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    background-color: #00000080;
+    z-index: 900;
+}
+#progressbar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8px;
+    background-color: #11a7f3;
+    z-index: 1000;
+}
+#progressbar:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #11a7f3;
+    filter: blur(5px);
+   
+    -webkit-filter: blur(5px);
+}
+#progressbar:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(30px);
+    background-color: #11a7f3;
+}
+/*progress width bar*/
+#progress
+{
+    position: fixed;
+    height: 5px;
+    background-color: #11a7f3;
+    z-index: 9999;
+    border-radius: 0;
+    display: none;
 }
 
 /*start of navbar*/
@@ -48,11 +102,18 @@ header
 .hedaerLayer
 {
 
-  background-color: #0000007c;
     width: 100%;
     height: 100%;
+    background-color: #3b3a3a99;
 }
 
+.headerData h1
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 0.6;
+}
 
 .headerData a 
 {
@@ -65,8 +126,77 @@ header
 /*end of header*/
 
 /*start of about*/
+#about .container-fluid
+{
+    padding: 0;
+}
+.aboutData .col-lg-4 , .aboutData img 
+{
+    height: 338px !important;
+    width: 100%;
+}
+.aboutData h4 , .aboutData h3
+{
+    font-weight: 800;
+    color: #1f1f1f;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+.aboutData h4 span , .aboutData h3 span {color: #11a7f3;}
+.aboutData h4 
+{
+    font-size: 25px;
+}
+
+.aboutData
+{
+    overflow: hidden;
+}
+.aboutData img
+{
+    transition: all ease 0.9s;
+    -webkit-transition: all ease 0.9s;
+    -moz-transition: all ease 0.9s;
+    -ms-transition: all ease 0.9s;
+    -o-transition: all ease 0.9s;
+    
+}
+.aboutData:hover  img
+{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    filter: grayscale(100%);
+}
+.aboutData li 
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 3% 0;
+}
+.aboutData li p
+{
+    font-size: 14px;
+}
+.aboutData svg 
+{
+    width: 10%;
+
+}
+/*all divs*/
 .div1
 {
     height: 500px;
     background-color: red;
 }
+
+
+/*start of media query*/
+/*mobil screens*/
+@media screen and (max-width: 426px) {
+    #progress {display: block;}
+    #scrollPath ,#progressbar{ display: none;}
+  }
