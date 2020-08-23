@@ -1,6 +1,6 @@
 /*header background offset*/
 const parallex = document.getElementById("parallex");
-
+parallex.style.backgroundPositionY =  0;
 window.addEventListener("scroll", function ()
 {
     let offset = window.pageYOffset;
@@ -42,28 +42,28 @@ const text = document.querySelector(".animated");
 const strText = text.textContent;
 const splitText = strText.split('');
 text.textContent = '';
-
-for(let i=0 ; i < splitText.length; i++)
-  {
-    text.innerHTML += '<span>' + splitText[i] + '</span>';
-    
-  }
-
-  let char = 0;
-  let timer = setInterval(onTick, 50);
-
-function onTick()
-{
-  const span = text.querySelectorAll('span')[char];
-  span.classList.add('fade' ,'colored');
-  char++
-    if(char === splitText.length)
+$(function() {  
+  for(let i=0 ; i < splitText.length; i++)
     {
-        complete();
-        return;
+      text.innerHTML += '<span>' + splitText[i] + '</span>';
+      
     }
-}
- 
+  
+    let char = 0;
+    let timer = setInterval(onTick, 50);
+  
+  function onTick()
+  {
+    const span = text.querySelectorAll('span')[char];
+    span.classList.add('fade' ,'colored');
+    char++
+      if(char === splitText.length)
+      {
+          complete();
+          return;
+      }
+  }
+});
 function complete () 
 {
     clearInterval(timer);
