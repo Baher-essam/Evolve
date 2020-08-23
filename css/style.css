@@ -22,7 +22,7 @@ a , .navbar-light .navbar-nav .active>.nav-link , .btn
 }
 .dark-bg { background-color: #1f1f1f;}
 a:hover {text-decoration: none;}
-
+html{ scroll-behavior: smooth;}
 /*progress height bar*/
 ::-webkit-scrollbar {width: 0;}
 #scrollPath
@@ -292,19 +292,44 @@ header
 }
 .qoutesText > div p:last-child {font-size: 20px;}
 /*end of qoutes section*/
-/*all divs*/
-.div1
+
+/*start of schedule*/
+#schedule {padding: 6% 0;}
+#schedule a , .scheduleTitle {color: #000;}
+.scheduleTitle h1{font-weight: 700;}
+#schedule .container {width: 50%;}
+#schedule .nav-pills .nav-link 
 {
-    height: 500px;
-    background-color: red;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: #00000012;
+    font-size: 14px;
 }
+#schedule .nav-pills .nav-link.active
+{
+    background-color: #f42841;
+    color: #fff;
+    font-weight: 600;
+}
+#schedule .scheduleDates  {border-bottom: solid 1px #f1f1f1;}
+#schedule .col-12 .col-12:last-child .scheduleDates  {border-bottom: 0;}
+.scheduleDates p {font-size: 14px;}
+.scheduleDates > p {color: #787878;}
+/*end of schedule*/
+
 /*start of media query*/
 
 /*tablet screens*/
 @media screen and (max-width: 769px) {
+    /*quotes*/
     #qoutes { height: 400px;}
     .qoutesText {font-size: 22px;}
     .qoutesText {right: 43%;}
+    /*schedule*/
+    #schedule .container {width: 100%;}
 }
 /*mobil screens*/
 @media screen and (max-width: 426px) {
