@@ -15,10 +15,12 @@
     </head>
     <body>
         <!--loading start icon-->
-<section id="loading"></section>
-<div id="progressbar"></div>
-<div id="scrollPath"></div>
-<div id="progress"></div>
+        <section id="loading"></section>
+        <!--scrollbar-->
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+        <!--progress bar-->
+        <div id="progress"></div>
         
         <!--start of navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top text-white py-2">
@@ -26,8 +28,8 @@
                 <a class="navbar-brand" href="#">
                     <div class="logo">
                         <picture>
-                            <source src="images/logo-light.webp" type="image/webp">
-                            <source src="images/logo-light.png" type="image/png">
+                            <source srcset="images/logo-light.webp" type="image/webp">
+                            <source srcset="images/logo-light.png" type="image/png">
                             <img src="images/logo-light.png" class="img-fluid" alt="Evolove logo">
                         </picture>
                     </div>
@@ -136,18 +138,18 @@
         </nav>
         <!--end of navbar-->
 
-
         <!--start of header-->
         <header id="parallex" class=" ">
             <div class="hedaerLayer d-flex align-items-center justify-content-center">
                 <div class="headerData text-center text-white">
-                    <h1>Powerful Workout</h1>
+                    <h1 class="animated">Powerful &nbsp; Workout</h1>
                     <p class="my-3">Learn the secrets of gym success.</p>
                     <a href="#" class="text-uppercase btn">get started</a>
                 </div>
             </div>
         </header>
 
+         <!--start of about-->
         <div id="about" class="about">
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center no-gutters">
@@ -160,8 +162,8 @@
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="aboutData">
                             <picture>
-                                <source src="images/fitness-1.webp" type="image/webp">
-                                <source src="images/fitness-1.jpg" type="image/jpg">
+                                <source srcset="images/fitness-1.webp" type="image/webp">
+                                <source srcset="images/fitness-1.jpg" type="image/jpg">
                                 <img src="images/fitness-1.jpg" class="img-fluid" alt="fitness 1">
                             </picture>
                         </div>
@@ -263,8 +265,8 @@
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="aboutData">
                             <picture>
-                                <source src="images/fitness-2.webp" type="image/webp">
-                                <source src="images/fitness-2.jpg" type="image/jpg">
+                                <source srcset="images/fitness-2.webp" type="image/webp">
+                                <source srcset="images/fitness-2.jpg" type="image/jpg">
                                 <img src="images/fitness-2.jpg" class="img-fluid" alt="fitness 1">
                             </picture>
                         </div>
@@ -299,8 +301,8 @@
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="aboutData">
                             <picture>
-                                <source src="images/fitness-3.webp" type="image/webp">
-                                <source src="images/fitness-3.jpg" type="image/jpg">
+                                <source srcset="images/fitness-3.webp" type="image/webp">
+                                <source srcset="images/fitness-3.jpg" type="image/jpg">
                                 <img src="images/fitness-3.jpg" class="img-fluid" alt="fitness 1">
                             </picture>
                         </div>
@@ -308,12 +310,85 @@
                 </div>
             </div>
         </div>
-        
+         <!--end of about-->
+
+        <!--start of classes-->
+        <div id="classes">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 text-center">
+                        <div class="classesTitle mb-5">
+                            <h1 class="text-capitalize">the classses</h1>
+                            <p>Follow our trainers tips.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="classesData">
+                           <div class="classesImg">
+                            <picture>
+                                <source srcset="images/fitness-4.webp" type="image/webp">
+                                <source srcset="images/fitness-4.jpg" type="image/jpg">
+                                <img src="images/fitness-4.jpg" class="img-fluid" alt="fitness trainer 1">
+                            </picture>
+                           </div>
+                           <div class="classesOverlay"></div>
+                           <div class="classesText">
+                                <h3>croosfit</h3>
+                                <div class="text-uppercase">
+                                    <a href="#"></a>
+                                    <p class="mb-0"> watch tariler</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="classesData">
+                           <div class="classesImg">
+                            <picture>
+                                <source srcset="images/fitness-5.webp" type="image/webp">
+                                <source srcset="images/fitness-5.jpg" type="image/jpg">
+                                <img src="images/fitness-5.jpg" class="img-fluid" alt="fitness trainer 2">
+                            </picture>
+                           </div>
+                           <div class="classesOverlay"></div>
+                           <div class="classesText">
+                                <h3>Body Building</h3>
+                                <div class="text-uppercase">
+                                    <a href="#"></a>
+                                    <p class="mb-0"> watch tariler</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="classesData">
+                           <div class="classesImg">
+                            <picture>
+                                <source srcset="images/fitness-6.webp" type="image/webp">
+                                <source srcset="images/fitness-6.jpg" type="image/jpg">
+                                <img src="images/fitness-6.jpg" class="img-fluid" alt="fitness trainer 3">
+                            </picture>
+                           </div>
+                           <div class="classesOverlay"></div>
+                           <div class="classesText">
+                                <h3>Aerobics</h3>
+                                <div class="text-uppercase">
+                                    <a href="#"></a>
+                                    <p class="mb-0"> watch tariler</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+    
         <div class="div1"></div>
         
-        <div class="div1"></div>
-        
-        <div class="div1"></div>
+        <div  class="div1"></div>
         <!--end of header-->
 
 
