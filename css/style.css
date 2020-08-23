@@ -263,9 +263,35 @@ header
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
-
 /*end of classes section*/
 
+/*start of qoutes scetion*/
+#qoutes{
+    background-image: url(../images/bg-image-32.jpg);
+    position: relative;
+    background-size: 100% 170%; 
+    background-position: center;
+    height: 450px;
+}
+.qoutesOverlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f1f1f;
+    opacity: .5;
+}
+.qoutesText {    
+    position: absolute;
+    left: 10%;
+    right: 50%;
+    top: 35%;
+    font-size: 28px;
+}
+.qoutesText > div p:last-child {font-size: 20px;}
+/*end of qoutes section*/
 /*all divs*/
 .div1
 {
@@ -273,8 +299,29 @@ header
     background-color: red;
 }
 /*start of media query*/
+
+/*tablet screens*/
+@media screen and (max-width: 769px) {
+    #qoutes { height: 400px;}
+    .qoutesText {font-size: 22px;}
+    .qoutesText {right: 43%;}
+}
 /*mobil screens*/
 @media screen and (max-width: 426px) {
     #progress {display: block;}
     #scrollPath ,#progressbar{ display: none;}
+    /*qoutes*/
+    #qoutes { height: 300px;}
+    .qoutesText {font-size: 18px;}
+    .qoutesText {right: 20%;}
   }
+  
+@media screen and (max-width: 376px) {
+
+}
+@media screen and (max-width: 321px) {
+        /*qoutes*/
+        #qoutes { height: 250px;}
+        .qoutesText {font-size: 16px;}
+        .qoutesText {right: 10%;}
+}
